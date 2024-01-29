@@ -2,7 +2,7 @@
 padding : 0;
 margin : 0;
 color: white;
-
+cursor: none;
 }
 
 #main{
@@ -52,8 +52,9 @@ nav{
 }
 
 #box{
+    cursor: auto;
     position: relative;
-    z-index: 9;
+    z-index: 110;
     width:385px;
     height: 450px;
     background-image: linear-gradient(to left,rgba(255, 255, 255, 0.542), rgba(0, 0, 0, 0.609));
@@ -71,6 +72,7 @@ nav{
     border: 7px solid grey;
     border-radius: 50%;
     background-color: rgb(11, 1, 123);
+    cursor: auto;
 }
 
 #but{
@@ -80,7 +82,7 @@ nav{
     align-items: center;
     justify-content: space-evenly;
     transform: translate(0,-25%);
-    
+    cursor: auto;
 }
 
 
@@ -92,6 +94,7 @@ nav{
     z-index: 10;
     padding-left: 10px;
     height: 25px;
+    cursor: pointer;
     
 }
 #but h3{
@@ -108,6 +111,7 @@ nav{
     
 }
 #but h3 span h2{
+    cursor: pointer;
     font-size: .9rem;
     position: relative;
     z-index: 9;
@@ -118,6 +122,7 @@ nav{
 
 
 #box h3 span::after{
+    cursor: pointer;
     content: '';
     position: absolute;
     height:100%;
@@ -147,16 +152,40 @@ nav{
     font-size: 1.3rem;
 }
 #nav-part2 h3:hover{
-    font-size: 1.5rem;
-    /* cursor: pointer; */
+    font-size: 1.7rem;
+    cursor: pointer;
 }
 
-#cursior{
+.circle{
+    top:0;
+    left:0;
+    transform: translate(-50%,-50%);
     height:20px;
     width:20px;
     border-radius: 50%;
-    background-color: red;
+    display: none;
     position: absolute;
-    z-index: 100;
 }
+#circle1{
+    z-index: 100;
+    background-color: rgba(255, 0, 0, 0.498);
+    border: 2px solid rgb(202, 16, 16);
+    transition: all 0s linear;
+    
+}
+#circle2{
+    z-index: 99;
+    background-color: rgba(0, 17, 255, 0.498);
+    border: 2px solid rgb(255, 255, 255);
+    transition: all 0.25s linear;
+    
+}
+#circle3{
+    z-index: 98;
+    background-color: rgba(0, 225, 255, 0.498);
+    border: 2px solid rgb(0, 225, 255);
+    transition: all 0.5s linear;
+    
+}
+
 
